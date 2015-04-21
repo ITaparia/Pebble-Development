@@ -12,7 +12,6 @@
     "sdkVersion": "3",
     "shortName": "C Language Tutorial",
     "targetPlatforms": [
-        "aplite",
         "basalt"
     ],
     "uuid": "16d49fed-2f9e-4a18-bf59-fc8b04d250cb",
