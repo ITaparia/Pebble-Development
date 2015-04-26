@@ -1,0 +1,20 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "tapariaishan@yahoo.com",
+    "longName": "Shadow of the Colossus WatchFace",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Shadow of the Colossus WatchFace",
+    "uuid": "650884c1-b50f-4b53-b653-6133b03d7a18",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
