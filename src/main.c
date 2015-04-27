@@ -44,11 +44,11 @@ static void main_window_load(Window *window) {
   // Create time TextLayer
   s_time_layer = text_layer_create(GRect(5, 52, 139, 50));
   text_layer_set_background_color(s_time_layer, GColorClear);
-  text_layer_set_text_color(s_time_layer, GColorBlack);
+  text_layer_set_text_color(s_time_layer, GColorWhite);
   text_layer_set_text(s_time_layer, "00:00");
   
   //Create GFont
-  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT2_24));
+  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONTYES_30));
 
   //Apply to TextLayer
   text_layer_set_font(s_time_layer, s_time_font);
@@ -61,11 +61,11 @@ static void main_window_load(Window *window) {
   s_weather_layer = text_layer_create(GRect(0, 130, 144, 25));
   text_layer_set_background_color(s_weather_layer, GColorClear);
   text_layer_set_text_color(s_weather_layer, GColorWhite);
-  text_layer_set_text_alignment(s_weather_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_weather_layer, GTextAlignmentLeft);
   text_layer_set_text(s_weather_layer, "Loading...");
   
   // Create second custom font, apply it and add to Window
-  s_weather_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT2_24));
+  s_weather_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONTYES_15));
   text_layer_set_font(s_weather_layer, s_weather_font);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_weather_layer));
   

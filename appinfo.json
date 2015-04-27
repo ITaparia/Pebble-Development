@@ -4,32 +4,43 @@
         "KEY_TEMPERATURE": 0
     },
     "capabilities": [
-        "location"
+        "location",
+        "configurable"
     ],
-    "companyName": "tapariaishan@yahoo.com",
+    "companyName": "TopBox Software",
     "longName": "Shadow of the Colossus WatchFace",
     "projectType": "native",
     "resources": {
         "media": [
             {
-                "file": "fonts/copyfonts.com_gotham-light.ttf",
-                "name": "FONT2_24",
-                "type": "font"
-            },
-            {
-                "file": "images/background.png",
+                "file": "images/converted (1).png",
                 "name": "IMAGE_BACKGROUND",
                 "type": "png"
             },
             {
-                "file": "fonts/CAS_ANTN.TTF",
-                "name": "FONT_24",
+                "file": "fonts/Segan-Light.ttf",
+                "name": "FONTYES_5",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Segan-Light.ttf",
+                "name": "FONTYES_15",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Segan-Light.ttf",
+                "name": "FONTYES_30",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Segan-Light.ttf",
+                "name": "FONTYES_20",
                 "type": "font"
             }
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Shadow of the Colossus WatchFace",
+    "shortName": "SotC Face",
     "targetPlatforms": [
         "aplite",
         "basalt"
@@ -38,6 +49,6 @@
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }
