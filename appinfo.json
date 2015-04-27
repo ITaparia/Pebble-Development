@@ -1,16 +1,39 @@
 {
-    "appKeys": {},
+    "appKeys": {
+        "KEY_CONDITIONS": 1,
+        "KEY_TEMPERATURE": 0
+    },
     "capabilities": [
-        ""
+        "location"
     ],
     "companyName": "tapariaishan@yahoo.com",
     "longName": "Shadow of the Colossus WatchFace",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/copyfonts.com_gotham-light.ttf",
+                "name": "FONT2_24",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "fonts/CAS_ANTN.TTF",
+                "name": "FONT_24",
+                "type": "font"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Shadow of the Colossus WatchFace",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "650884c1-b50f-4b53-b653-6133b03d7a18",
     "versionCode": 1,
     "versionLabel": "1.0",
