@@ -60,20 +60,20 @@ static void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(s_background_layer));
   
   // Create time TextLayer
-  s_time_layer = text_layer_create(GRect(0, 15, 144, 50));
+  s_time_layer = text_layer_create(GRect(0, 25, 144, 50));
   text_layer_set_background_color(s_time_layer, GColorClear);
   text_layer_set_text_color(s_time_layer, GColorWhite);
   text_layer_set_text(s_time_layer, "00:00");
   
   //Create date TextLayer
-  date_layer = text_layer_create(GRect(0, 0, 144, 56));
+  date_layer = text_layer_create(GRect(0, 10, 144, 56));
   text_layer_set_background_color(date_layer, GColorClear);
   text_layer_set_text_color(date_layer, GColorWhite);
 	
   // Create battery TextLayer
-  s_output_layer = text_layer_create(GRect(0, 0, 144, 56));
-  text_layer_set_background_color(date_layer, GColorClear);
-  text_layer_set_text_color(date_layer, GColorWhite);
+  s_output_layer = text_layer_create(GRect(0, 90, 144, 56));
+  text_layer_set_background_color(s_output_layer, GColorClear);
+  text_layer_set_text_color(s_output_layer, GColorWhite);
   
   //Create GFont
   s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONTYES_30));
@@ -86,7 +86,7 @@ static void main_window_load(Window *window) {
   text_layer_set_font(date_layer, s_date_font);
   text_layer_set_text_alignment(date_layer, GTextAlignmentCenter);
   text_layer_set_font(s_output_layer, s_battery_font);
-  text_layer_set_text_alignment(s_output_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_output_layer, GTextAlignmentLeft);
 
   // Add it as a child layer to the Window's root layer
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_time_layer));
@@ -94,7 +94,7 @@ static void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_output_layer));
   
   // Create temperature Layer
-  s_weather_layer = text_layer_create(GRect(4, 130, 144, 25));
+  s_weather_layer = text_layer_create(GRect(0, 130, 144, 25));
   text_layer_set_background_color(s_weather_layer, GColorClear);
   text_layer_set_text_color(s_weather_layer, GColorWhite);
   text_layer_set_text_alignment(s_weather_layer, GTextAlignmentLeft);
