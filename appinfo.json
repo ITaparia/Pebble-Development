@@ -7,7 +7,33 @@
     "longName": "Navi WatchFace",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "DUAL_15",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "DUAL_10",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "DUAL_35",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "DUAL_30",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Navi",
