@@ -1,0 +1,22 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Ishan Taparia",
+    "longName": "Navi WatchFace",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Navi",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "65c308c3-f657-4b03-9e28-3ae4bd2006a0",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
