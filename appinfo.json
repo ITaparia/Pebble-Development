@@ -9,6 +9,21 @@
     "resources": {
         "media": [
             {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_20",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_30",
+                "type": "font"
+            },
+            {
                 "file": "images/pokeball_pebble_menu.png",
                 "menuIcon": true,
                 "name": "IMAGE_MENU",
@@ -19,7 +34,6 @@
     "sdkVersion": "3",
     "shortName": "Pokeball Watchface",
     "targetPlatforms": [
-        "basalt",
         "chalk"
     ],
     "uuid": "3dfba3df-f6aa-4c53-a85d-0a49b66206e6",
