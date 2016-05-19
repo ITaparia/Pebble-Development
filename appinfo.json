@@ -4,6 +4,7 @@
         ""
     ],
     "companyName": "TopBox Software",
+    "enableMultiJS": false,
     "longName": "Pokeball Watchface",
     "projectType": "native",
     "resources": {
@@ -11,23 +12,50 @@
             {
                 "file": "images/background.png",
                 "name": "IMAGE_BACKGROUND",
-                "type": "png"
-            },
-            {
-                "file": "fonts/Dual-300.ttf",
-                "name": "TIME_FONT_20",
-                "type": "font"
-            },
-            {
-                "file": "fonts/Dual-300.ttf",
-                "name": "TIME_FONT_30",
-                "type": "font"
+                "targetPlatforms": null,
+                "type": "bitmap"
             },
             {
                 "file": "images/pokeball_pebble_menu.png",
                 "menuIcon": true,
                 "name": "IMAGE_MENU",
-                "type": "png"
+                "type": "bitmap"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_21",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_15",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_30",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_20",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_10",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Dual-300.ttf",
+                "name": "TIME_FONT_12",
+                "targetPlatforms": null,
+                "type": "font"
             }
         ]
     },

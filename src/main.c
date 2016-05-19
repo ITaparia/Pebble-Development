@@ -27,7 +27,7 @@ static void update_time() {
   static char date_buffer[10];
   
   //Write the date into buffer variable
-  strftime(date_buffer, sizeof(date_buffer), "%b %e", tick_time);
+  strftime(date_buffer, sizeof(date_buffer), "%d", tick_time);
   
   //Display date text on watch
 	text_layer_set_text(s_date_layer, date_buffer);
@@ -57,14 +57,14 @@ static void main_window_load(Window *window) {
   
   // Create the TextLayer with specific bounds
   s_time_layer = text_layer_create(
-      GRect(0, PBL_IF_ROUND_ELSE(21, 52), bounds.size.w, 50));
+      GRect(0, PBL_IF_ROUND_ELSE(120, 52), bounds.size.w, 50));
   
   s_date_layer = text_layer_create(
-      GRect(0, PBL_IF_ROUND_ELSE(125, 52), bounds.size.w, 50));
+      GRect(0, PBL_IF_ROUND_ELSE(77, 52), bounds.size.w, 50));
   
   // Create GFont
   s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_TIME_FONT_30));
-  s_date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_TIME_FONT_20));
+  s_date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_TIME_FONT_21));
 
   // Improve the layout to be more like a watchface
   text_layer_set_background_color(s_time_layer, GColorClear);
@@ -108,10 +108,10 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 
 static void init() {
   
-  window_set_background_color(s_main_window, GColorBlack);
-
   // Create main Window element and assign to pointer
-  s_main_window = window_create();
+s_main_window = window_create();
+
+window_set_background_color(s_main_window, GColorBlack);
 
   // Set handlers to manage the elements inside the Window
   window_set_window_handlers(s_main_window, (WindowHandlers) {
